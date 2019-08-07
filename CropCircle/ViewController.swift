@@ -19,25 +19,36 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        // initialize image picker controller delegate
+        picker.delegate = (self as UIImagePickerControllerDelegate & UINavigationControllerDelegate)
+        
         // round corners of display image
         croppedImageView.layer.cornerRadius = croppedImageView.frame.size.width / 2;
         croppedImageView.clipsToBounds = true
     }
 
     
-    
-    
+    @IBAction func onCameraButton(_ sender: Any) {
+        
+        // to avoid crashing simulator, make sure camera is available
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            picker.sourceType = .camera
+        } else {
+            picker.sourceType = .photoLibrary
+        }
+        
+        present(picker, animated: true, completion: nil)
+        
+    }
     
     @IBAction func onGalleryButton(_ sender: Any) {
         
-        // create image picker controller
-        picker.delegate = (self as UIImagePickerControllerDelegate & UINavigationControllerDelegate)
         picker.sourceType = .photoLibrary
         
         present(picker, animated: true, completion: nil)
     }
     
-    // after picking image from gallery
+    // after picking image from gallery or taking new photo from camera
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
         let chosenImage = info[.originalImage] as! UIImage

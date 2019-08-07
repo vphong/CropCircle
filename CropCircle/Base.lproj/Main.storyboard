@@ -18,10 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZf-gi-5h3">
-                                <rect key="frame" x="115.5" y="381" width="89" height="30"/>
-                                <state key="normal" title="Take a Photo"/>
-                            </button>
                             <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Oh-Si-eM9">
                                 <rect key="frame" x="50" y="131" width="220" height="220"/>
                                 <constraints>
@@ -29,6 +25,13 @@
                                     <constraint firstAttribute="width" constant="220" id="W6n-ma-pyO"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZf-gi-5h3">
+                                <rect key="frame" x="115.5" y="381" width="89" height="30"/>
+                                <state key="normal" title="Take a Photo"/>
+                                <connections>
+                                    <action selector="onCameraButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bhn-Ds-h7H"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUj-SS-8Vg">
                                 <rect key="frame" x="89.5" y="419" width="141" height="30"/>
                                 <state key="normal" title="Choose from Gallery"/>
