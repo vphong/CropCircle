@@ -18,8 +18,15 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        // round corners of display image
+        croppedImageView.layer.cornerRadius = croppedImageView.frame.size.width / 2;
+        croppedImageView.clipsToBounds = true
     }
 
+    
+    
+    
     
     @IBAction func onGalleryButton(_ sender: Any) {
         
@@ -46,10 +53,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     // MARK: -- RSKImageCropper Delegate Protocols
     func imageCropViewControllerDidCancelCrop(_ controller: RSKImageCropViewController) {
+        // back to initial screen if cancelled
         self.navigationController?.popViewController(animated: true)
     }
     
     func imageCropViewController(_ controller: RSKImageCropViewController, didCropImage croppedImage: UIImage, usingCropRect cropRect: CGRect, rotationAngle: CGFloat) {
+        
+        // set display picture to cropped image and navigate back
         croppedImageView.image = croppedImage
         self.navigationController?.popViewController(animated: true)
     }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qKw-tc-PVZ">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,21 +15,22 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CropCircle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZf-gi-5h3">
-                                <rect key="frame" x="143" y="359" width="89" height="30"/>
+                                <rect key="frame" x="115.5" y="381" width="89" height="30"/>
                                 <state key="normal" title="Take a Photo"/>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Oh-Si-eM9">
-                                <rect key="frame" x="75" y="104" width="225" height="225"/>
+                            <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Oh-Si-eM9">
+                                <rect key="frame" x="50" y="131" width="220" height="220"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="225" id="YkD-JR-QOa"/>
+                                    <constraint firstAttribute="height" constant="220" id="MiP-7v-Pwl"/>
+                                    <constraint firstAttribute="width" constant="220" id="W6n-ma-pyO"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUj-SS-8Vg">
-                                <rect key="frame" x="114" y="397" width="146" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUj-SS-8Vg">
+                                <rect key="frame" x="89.5" y="419" width="141" height="30"/>
                                 <state key="normal" title="Choose from Gallery"/>
                                 <connections>
                                     <action selector="onGalleryButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fRY-SF-cjD"/>
@@ -38,14 +39,12 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="5Oh-Si-eM9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="8a7-Ix-2gh"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bUj-SS-8Vg" secondAttribute="bottom" constant="240" id="MXV-jF-epj"/>
-                            <constraint firstItem="bUj-SS-8Vg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="114" id="SKR-4F-Z7b"/>
-                            <constraint firstItem="5Oh-Si-eM9" firstAttribute="centerX" secondItem="wZf-gi-5h3" secondAttribute="centerX" id="dgv-tF-gS6"/>
-                            <constraint firstItem="wZf-gi-5h3" firstAttribute="top" secondItem="5Oh-Si-eM9" secondAttribute="bottom" constant="30" id="fsX-V9-KQn"/>
-                            <constraint firstItem="bUj-SS-8Vg" firstAttribute="top" secondItem="wZf-gi-5h3" secondAttribute="bottom" constant="8" symbolic="YES" id="mCR-zL-bi1"/>
-                            <constraint firstItem="bUj-SS-8Vg" firstAttribute="centerX" secondItem="wZf-gi-5h3" secondAttribute="centerX" id="qMc-iv-tdP"/>
-                            <constraint firstItem="5Oh-Si-eM9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wZ1-6O-Pih"/>
+                            <constraint firstItem="wZf-gi-5h3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6dc-P7-BKb"/>
+                            <constraint firstItem="wZf-gi-5h3" firstAttribute="top" secondItem="5Oh-Si-eM9" secondAttribute="bottom" constant="30" id="8Vg-XS-kEM"/>
+                            <constraint firstItem="5Oh-Si-eM9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="67" id="BAC-An-oj2"/>
+                            <constraint firstItem="bUj-SS-8Vg" firstAttribute="top" secondItem="wZf-gi-5h3" secondAttribute="bottom" constant="8" id="GLm-oV-r56"/>
+                            <constraint firstItem="5Oh-Si-eM9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e9o-nD-sdg"/>
+                            <constraint firstItem="bUj-SS-8Vg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hqL-g4-gbG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -56,7 +55,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1071.2" y="132.68365817091455"/>
+            <point key="canvasLocation" x="1071.0144927536232" y="132.58928571428572"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mVs-y3-ail">
@@ -64,7 +63,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qKw-tc-PVZ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cCT-bH-SpW">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
