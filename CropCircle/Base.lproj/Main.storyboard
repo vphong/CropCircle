@@ -22,7 +22,7 @@
                                 <rect key="frame" x="143" y="359" width="89" height="30"/>
                                 <state key="normal" title="Take a Photo"/>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Oh-Si-eM9">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Oh-Si-eM9">
                                 <rect key="frame" x="75" y="104" width="225" height="225"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="225" id="YkD-JR-QOa"/>

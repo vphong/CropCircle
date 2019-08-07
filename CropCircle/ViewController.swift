@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import RSKImageCropper
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, RSKImageCropViewControllerDelegate {
 
     @IBOutlet weak var croppedImageView: UIImageView!
+    
+    let picker = UIImagePickerController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +24,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBAction func onGalleryButton(_ sender: Any) {
         
         // create image picker controller
-        let picker = UIImagePickerController()
         picker.delegate = (self as UIImagePickerControllerDelegate & UINavigationControllerDelegate)
         picker.sourceType = .photoLibrary
         
@@ -31,14 +33,25 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     // after picking image from gallery
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
-        let image = info[.originalImage] as! UIImage
+        let chosenImage = info[.originalImage] as! UIImage
         
-        let cropViewController =
         // send image to crop screen
+        let cropViewController = RSKImageCropViewController(image: chosenImage, cropMode: .circle)
+        cropViewController.delegate = self
+        self.navigationController?.pushViewController(cropViewController, animated: true)
         
-        croppedImageView.image = image
-        
+        // dismiss image picker
         dismiss(animated: true, completion: nil)
+    }
+    
+    // MARK: -- RSKImageCropper Delegate Protocols
+    func imageCropViewControllerDidCancelCrop(_ controller: RSKImageCropViewController) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    func imageCropViewController(_ controller: RSKImageCropViewController, didCropImage croppedImage: UIImage, usingCropRect cropRect: CGRect, rotationAngle: CGFloat) {
+        croppedImageView.image = croppedImage
+        self.navigationController?.popViewController(animated: true)
     }
 }
 
