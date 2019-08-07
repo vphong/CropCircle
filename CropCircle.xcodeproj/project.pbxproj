@@ -13,6 +13,7 @@
 		CA756F4E22FB363F009D9919 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA756F4D22FB363F009D9919 /* Assets.xcassets */; };
 		CA756F5122FB363F009D9919 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA756F4F22FB363F009D9919 /* LaunchScreen.storyboard */; };
 		CA756F5C22FB363F009D9919 /* CropCircleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA756F5B22FB363F009D9919 /* CropCircleTests.swift */; };
+		CA756F6922FB44A4009D9919 /* CropViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA756F6822FB44A4009D9919 /* CropViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		CA756F5722FB363F009D9919 /* CropCircleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CropCircleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA756F5B22FB363F009D9919 /* CropCircleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropCircleTests.swift; sourceTree = "<group>"; };
 		CA756F5D22FB363F009D9919 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA756F6822FB44A4009D9919 /* CropViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				CA756F4622FB363D009D9919 /* AppDelegate.swift */,
 				CA756F4822FB363D009D9919 /* ViewController.swift */,
 				CA756F4A22FB363D009D9919 /* Main.storyboard */,
+				CA756F6822FB44A4009D9919 /* CropViewController.swift */,
 				CA756F4D22FB363F009D9919 /* Assets.xcassets */,
 				CA756F4F22FB363F009D9919 /* LaunchScreen.storyboard */,
 				CA756F5222FB363F009D9919 /* Info.plist */,
@@ -199,6 +202,7 @@
 			files = (
 				CA756F4922FB363D009D9919 /* ViewController.swift in Sources */,
 				CA756F4722FB363D009D9919 /* AppDelegate.swift in Sources */,
+				CA756F6922FB44A4009D9919 /* CropViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
