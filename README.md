@@ -4,4 +4,4 @@ Clone the repo, make sure CocoaPods is installed, `pod install`, run the app in 
 
 Demo:
 
-![demo](demo.gif)
+<img src="https://github.com/vphong/CropCircle/raw/master/demo.gif" alt="demo" width="350">
