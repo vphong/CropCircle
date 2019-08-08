@@ -7,9 +7,9 @@
 //
 
 import UIKit
-import RSKImageCropper
+import CropViewController
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, RSKImageCropViewControllerDelegate {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, CropViewControllerDelegate {
 
     @IBOutlet weak var croppedImageView: UIImageView!
     
@@ -53,8 +53,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
         let chosenImage = info[.originalImage] as! UIImage
         
-        // send image to crop screen
-        let cropViewController = RSKImageCropViewController(image: chosenImage, cropMode: .circle)
+        let cropViewController = CropViewController(croppingStyle: .circular, image: chosenImage)
         cropViewController.delegate = self
         self.navigationController?.pushViewController(cropViewController, animated: true)
         
@@ -62,17 +61,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         dismiss(animated: true, completion: nil)
     }
     
-    // MARK: -- RSKImageCropper Delegate Protocols
-    func imageCropViewControllerDidCancelCrop(_ controller: RSKImageCropViewController) {
-        // back to initial screen if cancelled
+    // MARK: -- CropViewController Delegate Protocols
+    func cropViewController(_ cropViewController: CropViewController, didCropToCircularImage image: UIImage, withRect cropRect: CGRect, angle: Int) {
+        
+        croppedImageView.image = image
         self.navigationController?.popViewController(animated: true)
     }
     
-    func imageCropViewController(_ controller: RSKImageCropViewController, didCropImage croppedImage: UIImage, usingCropRect cropRect: CGRect, rotationAngle: CGFloat) {
-        
-        // set display picture to cropped image and navigate back
-        croppedImageView.image = croppedImage
-        self.navigationController?.popViewController(animated: true)
-    }
 }
 

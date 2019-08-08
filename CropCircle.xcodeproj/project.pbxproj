@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1323FB99F335BA94B2EBFB21 /* Pods_CropCircle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 709D741C4C33A1AD8A8EBCD6 /* Pods_CropCircle.framework */; };
-		266AFC2DE2DCF5543BDF8971 /* Pods_CropCircleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4315F5FB4E1ECAD8AD006468 /* Pods_CropCircleTests.framework */; };
+		4AFE6777D2519EE0EB0713BB /* Pods_CropCircleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86D3F8CC3A9C62FD1A5955D /* Pods_CropCircleTests.framework */; };
 		CA756F4722FB363D009D9919 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA756F4622FB363D009D9919 /* AppDelegate.swift */; };
 		CA756F4922FB363D009D9919 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA756F4822FB363D009D9919 /* ViewController.swift */; };
 		CA756F4C22FB363D009D9919 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA756F4A22FB363D009D9919 /* Main.storyboard */; };
 		CA756F4E22FB363F009D9919 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA756F4D22FB363F009D9919 /* Assets.xcassets */; };
 		CA756F5122FB363F009D9919 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA756F4F22FB363F009D9919 /* LaunchScreen.storyboard */; };
 		CA756F5C22FB363F009D9919 /* CropCircleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA756F5B22FB363F009D9919 /* CropCircleTests.swift */; };
+		E88EFF050D865FCB24718785 /* Pods_CropCircle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AD6DDEB138D7574B837CC80 /* Pods_CropCircle.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,10 +28,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		036C7806FCA1BB5073B9A291 /* Pods-CropCircle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CropCircle.release.xcconfig"; path = "Pods/Target Support Files/Pods-CropCircle/Pods-CropCircle.release.xcconfig"; sourceTree = "<group>"; };
-		4315F5FB4E1ECAD8AD006468 /* Pods_CropCircleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CropCircleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		709D741C4C33A1AD8A8EBCD6 /* Pods_CropCircle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CropCircle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC998F8F58B9C40244601480 /* Pods-CropCircleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CropCircleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CropCircleTests/Pods-CropCircleTests.release.xcconfig"; sourceTree = "<group>"; };
+		3AD6DDEB138D7574B837CC80 /* Pods_CropCircle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CropCircle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F12B5CCF9697D8DB6C3603B /* Pods-CropCircleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CropCircleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CropCircleTests/Pods-CropCircleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7D7FD83436FBAD2AB6964837 /* Pods-CropCircleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CropCircleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CropCircleTests/Pods-CropCircleTests.release.xcconfig"; sourceTree = "<group>"; };
+		8C4D3C03D7D473A469DC91BD /* Pods-CropCircle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CropCircle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CropCircle/Pods-CropCircle.debug.xcconfig"; sourceTree = "<group>"; };
 		CA756F4322FB363D009D9919 /* CropCircle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CropCircle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA756F4622FB363D009D9919 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA756F4822FB363D009D9919 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,8 +42,8 @@
 		CA756F5722FB363F009D9919 /* CropCircleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CropCircleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA756F5B22FB363F009D9919 /* CropCircleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropCircleTests.swift; sourceTree = "<group>"; };
 		CA756F5D22FB363F009D9919 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D941B3BDA2A0ECC73EA6A53A /* Pods-CropCircleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CropCircleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CropCircleTests/Pods-CropCircleTests.debug.xcconfig"; sourceTree = "<group>"; };
-		F1FEBEE98D31A8D5B4B4C71C /* Pods-CropCircle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CropCircle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CropCircle/Pods-CropCircle.debug.xcconfig"; sourceTree = "<group>"; };
+		D86D3F8CC3A9C62FD1A5955D /* Pods_CropCircleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CropCircleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE16847D4DA97894A6BD340C /* Pods-CropCircle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CropCircle.release.xcconfig"; path = "Pods/Target Support Files/Pods-CropCircle/Pods-CropCircle.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1323FB99F335BA94B2EBFB21 /* Pods_CropCircle.framework in Frameworks */,
+				E88EFF050D865FCB24718785 /* Pods_CropCircle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,31 +59,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				266AFC2DE2DCF5543BDF8971 /* Pods_CropCircleTests.framework in Frameworks */,
+				4AFE6777D2519EE0EB0713BB /* Pods_CropCircleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		13E321F082601750DD0AF787 /* Frameworks */ = {
+		A173261DC3E8D510E6115722 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				709D741C4C33A1AD8A8EBCD6 /* Pods_CropCircle.framework */,
-				4315F5FB4E1ECAD8AD006468 /* Pods_CropCircleTests.framework */,
+				3AD6DDEB138D7574B837CC80 /* Pods_CropCircle.framework */,
+				D86D3F8CC3A9C62FD1A5955D /* Pods_CropCircleTests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		8B8819E93C0D22CD8B73667F /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F1FEBEE98D31A8D5B4B4C71C /* Pods-CropCircle.debug.xcconfig */,
-				036C7806FCA1BB5073B9A291 /* Pods-CropCircle.release.xcconfig */,
-				D941B3BDA2A0ECC73EA6A53A /* Pods-CropCircleTests.debug.xcconfig */,
-				BC998F8F58B9C40244601480 /* Pods-CropCircleTests.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		CA756F3A22FB363D009D9919 = {
@@ -92,8 +81,8 @@
 				CA756F4522FB363D009D9919 /* CropCircle */,
 				CA756F5A22FB363F009D9919 /* CropCircleTests */,
 				CA756F4422FB363D009D9919 /* Products */,
-				8B8819E93C0D22CD8B73667F /* Pods */,
-				13E321F082601750DD0AF787 /* Frameworks */,
+				D2EF0AA86072A1F980560347 /* Pods */,
+				A173261DC3E8D510E6115722 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +117,17 @@
 			path = CropCircleTests;
 			sourceTree = "<group>";
 		};
+		D2EF0AA86072A1F980560347 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8C4D3C03D7D473A469DC91BD /* Pods-CropCircle.debug.xcconfig */,
+				FE16847D4DA97894A6BD340C /* Pods-CropCircle.release.xcconfig */,
+				6F12B5CCF9697D8DB6C3603B /* Pods-CropCircleTests.debug.xcconfig */,
+				7D7FD83436FBAD2AB6964837 /* Pods-CropCircleTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,11 +135,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA756F6022FB363F009D9919 /* Build configuration list for PBXNativeTarget "CropCircle" */;
 			buildPhases = (
-				5C379F09E7CF252841DD1287 /* [CP] Check Pods Manifest.lock */,
+				D124A30F2D42FA58E846F9D4 /* [CP] Check Pods Manifest.lock */,
 				CA756F3F22FB363D009D9919 /* Sources */,
 				CA756F4022FB363D009D9919 /* Frameworks */,
 				CA756F4122FB363D009D9919 /* Resources */,
-				B8374FE927D1F72D64328B55 /* [CP] Embed Pods Frameworks */,
+				CB83762801C75E1EC74CD7AB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,7 +154,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA756F6322FB363F009D9919 /* Build configuration list for PBXNativeTarget "CropCircleTests" */;
 			buildPhases = (
-				7F8DD09846E0EEA924AFAB17 /* [CP] Check Pods Manifest.lock */,
+				0C441F43C7247AE0C7254933 /* [CP] Check Pods Manifest.lock */,
 				CA756F5322FB363F009D9919 /* Sources */,
 				CA756F5422FB363F009D9919 /* Frameworks */,
 				CA756F5522FB363F009D9919 /* Resources */,
@@ -228,29 +228,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5C379F09E7CF252841DD1287 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CropCircle-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7F8DD09846E0EEA924AFAB17 /* [CP] Check Pods Manifest.lock */ = {
+		0C441F43C7247AE0C7254933 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -272,7 +250,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B8374FE927D1F72D64328B55 /* [CP] Embed Pods Frameworks */ = {
+		CB83762801C75E1EC74CD7AB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -281,17 +259,39 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CropCircle/Pods-CropCircle-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RSKImageCropper/RSKImageCropper.framework",
+				"${BUILT_PRODUCTS_DIR}/CropViewController/CropViewController.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RSKImageCropper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CropViewController.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CropCircle/Pods-CropCircle-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D124A30F2D42FA58E846F9D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CropCircle-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -462,7 +462,7 @@
 		};
 		CA756F6122FB363F009D9919 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F1FEBEE98D31A8D5B4B4C71C /* Pods-CropCircle.debug.xcconfig */;
+			baseConfigurationReference = 8C4D3C03D7D473A469DC91BD /* Pods-CropCircle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -480,7 +480,7 @@
 		};
 		CA756F6222FB363F009D9919 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 036C7806FCA1BB5073B9A291 /* Pods-CropCircle.release.xcconfig */;
+			baseConfigurationReference = FE16847D4DA97894A6BD340C /* Pods-CropCircle.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -498,7 +498,7 @@
 		};
 		CA756F6422FB363F009D9919 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D941B3BDA2A0ECC73EA6A53A /* Pods-CropCircleTests.debug.xcconfig */;
+			baseConfigurationReference = 6F12B5CCF9697D8DB6C3603B /* Pods-CropCircleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -519,7 +519,7 @@
 		};
 		CA756F6522FB363F009D9919 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BC998F8F58B9C40244601480 /* Pods-CropCircleTests.release.xcconfig */;
+			baseConfigurationReference = 7D7FD83436FBAD2AB6964837 /* Pods-CropCircleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

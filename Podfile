@@ -6,7 +6,7 @@ target 'CropCircle' do
   use_frameworks!
 
   # Pods for CropCircle
-  pod 'RSKImageCropper', '~> 2.2'
+  pod 'CropViewController'
 
   target 'CropCircleTests' do
     inherit! :search_paths
