@@ -11,20 +11,31 @@ import CropViewController
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, CropViewControllerDelegate {
 
+    @IBOutlet weak var shadowView: UIView!
     @IBOutlet weak var croppedImageView: UIImageView!
     
     let picker = UIImagePickerController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
         // initialize image picker controller delegate
         picker.delegate = (self as UIImagePickerControllerDelegate & UINavigationControllerDelegate)
         
         // round corners of display image
-        croppedImageView.layer.cornerRadius = croppedImageView.frame.size.width / 2;
+        croppedImageView.layer.cornerRadius = croppedImageView.frame.size.width / 2
         croppedImageView.clipsToBounds = true
+        croppedImageView.layer.borderColor = UIColor.white.cgColor
+        croppedImageView.layer.borderWidth = 3
+        
+        // create dropshadow for image
+        shadowView.layer.cornerRadius = croppedImageView.frame.size.width / 2
+        shadowView.layer.shadowColor = UIColor.black.cgColor
+        shadowView.layer.shadowOpacity = 0.4
+        shadowView.layer.shadowOffset = .zero
+        shadowView.layer.shadowRadius = 8
+        shadowView.layer.shadowPath = UIBezierPath(roundedRect: croppedImageView.bounds, cornerRadius: croppedImageView.layer.cornerRadius).cgPath
+
     }
 
     

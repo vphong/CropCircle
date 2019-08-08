@@ -1,0 +1,6 @@
+framework module Pods_CropCircle {
+  umbrella header "Pods-CropCircle-umbrella.h"
+
+  export *
+  module * { export * }
+}

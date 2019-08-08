@@ -18,6 +18,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HEt-qD-UVv">
+                                <rect key="frame" x="50" y="131" width="220" height="220"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Oh-Si-eM9">
                                 <rect key="frame" x="50" y="131" width="220" height="220"/>
                                 <constraints>
@@ -44,9 +48,13 @@
                         <constraints>
                             <constraint firstItem="wZf-gi-5h3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6dc-P7-BKb"/>
                             <constraint firstItem="wZf-gi-5h3" firstAttribute="top" secondItem="5Oh-Si-eM9" secondAttribute="bottom" constant="30" id="8Vg-XS-kEM"/>
+                            <constraint firstItem="HEt-qD-UVv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="67" id="ACP-l2-6hk"/>
                             <constraint firstItem="5Oh-Si-eM9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="67" id="BAC-An-oj2"/>
                             <constraint firstItem="bUj-SS-8Vg" firstAttribute="top" secondItem="wZf-gi-5h3" secondAttribute="bottom" constant="8" id="GLm-oV-r56"/>
+                            <constraint firstItem="HEt-qD-UVv" firstAttribute="bottom" secondItem="5Oh-Si-eM9" secondAttribute="bottom" id="WLY-aa-ZZW"/>
                             <constraint firstItem="5Oh-Si-eM9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e9o-nD-sdg"/>
+                            <constraint firstItem="HEt-qD-UVv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="epf-GW-K7O"/>
+                            <constraint firstItem="HEt-qD-UVv" firstAttribute="leading" secondItem="5Oh-Si-eM9" secondAttribute="leading" id="g0W-lm-fLP"/>
                             <constraint firstItem="bUj-SS-8Vg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hqL-g4-gbG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -54,6 +62,7 @@
                     <navigationItem key="navigationItem" id="ram-CZ-Xke"/>
                     <connections>
                         <outlet property="croppedImageView" destination="5Oh-Si-eM9" id="Cdj-21-wwJ"/>
+                        <outlet property="shadowView" destination="HEt-qD-UVv" id="iDb-vO-cCr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
