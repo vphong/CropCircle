@@ -1,6 +1,6 @@
 # CropCircle
 
-Clone the repo, make sure CocoaPods is installed, `pod install`, run the app in simulator!
+Clone the repo, make sure CocoaPods is installed, `pod install`, run the app in simulator! Made using [TOCropViewController by TimOliver](https://github.com/TimOliver/TOCropViewController).
 
 Demo:
 
